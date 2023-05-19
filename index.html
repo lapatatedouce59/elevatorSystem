@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevator</title>
+    <style>
+        #elevator{
+            background-image: url('./src/img/grey-concrete-wall.jpg');
+            background-repeat: repeat;
+            background-color: aqua;
+            height: 2000px;
+            width: 500px;
+            background-size: 300px;
+        }
+
+        #cab{
+            background-image: url('./src/img/otis4_weaveback.jpg');
+            background-color: aqua;
+            background-repeat: no-repeat;
+            background-size: 400px;
+            height: 320px;
+            width: 400px;
+            position: relative;
+            margin-left: 50px;
+            top: 1680px;
+        }
+
+        #cabDoorLeft{
+            width: 100px;
+            height: 257px;
+            margin-left: 100px;
+            position: relative;
+            left: -50px;
+            top: 63px;
+        }
+
+        #cabDoorRight{
+            width: 100px;
+            height: 257px;
+            margin-right: 100px;
+            position: relative;
+            right: 0px;
+            top: 63px;
+        }
+
+        #leftWall{
+            background-image: url('./src/img/Threadplate0055_2_S.jpg');
+            background-repeat: repeat;
+            background-size: 50px;
+            height: 320px;
+            width: 100px;
+        }
+
+        #rightWall{
+            background-image: url('./src/img/Threadplate0055_2_S.jpg');
+            background-repeat: repeat;
+            background-size: 50px;
+            height: 320px;
+            width: 100px;
+            position: absolute; 
+            top: 0px;
+            right: 0px;
+        }
+
+        #topWall{
+            background-image: url('./src/img/Threadplate0055_2_S.jpg');
+            background-repeat: repeat;
+            background-size: 50px;
+            height: 63px;
+            width: 200px;
+            position: absolute; 
+            top: 0px;
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <script src="./carte-sim.js" type="module"></script>
+    <div id="elevator">
+        <div id="cab">
+            <div id="doors" style="display: inline-table; position: relative;">
+                <img src="./src/img/door1.jpg" id="cabDoorLeft">                    
+                <img src="./src/img/door2.jpg" id="cabDoorRight">
+                <div id="leftWall" style="position: relative; top: -260px;"></div>
+                <div id="rightWall"></div>
+                <div id="topWall"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./elevator.js" type="module"></script>
+</body>
+</html>
